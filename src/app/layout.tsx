@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import 'devextreme/dist/css/dx.light.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="dx-viewport">{children}</body>
     </html>
   )
 }
